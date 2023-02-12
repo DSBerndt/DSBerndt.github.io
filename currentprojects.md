@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: Current Projects
 ---
 # About page
 

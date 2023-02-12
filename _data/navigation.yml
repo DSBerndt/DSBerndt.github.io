@@ -1,8 +1,10 @@
 - name: Home
   link: /
-- name: About
-  link: /about.html
-- name: Blog
-  link: /blog.html
-- name: Staff
-  link: /staff.html
+- name: Tutorials
+  link: /tutorials.html
+- name: Files
+  link: /files.html
+- name: Current Projects
+  link: /currentprojects.html
+- name: About Us
+  link: /aboutus.html

@@ -1,4 +1,4 @@
-<nav style="background-color: blanchedalmond; border: 2px solid black; padding: 10px;" >
+<nav class="navigation" >
     {% for item in site.data.navigation %}
         <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
             {{ item.name }}

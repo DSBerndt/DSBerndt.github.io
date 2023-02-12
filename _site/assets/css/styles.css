@@ -2,13 +2,59 @@
   color: green;
 }
 
-.pagebody {
+.sitebackground {
   background-color: floralwhite;
-  color: darkslategray;
+  display: grid;
+  width: 98%;
+  height: 250px;
+  grid-template-columns: [sidebar] 20% [body] 80% [bodyend];
+  grid-template-rows: [banner] 60px [navbar] 50px [heading] 50px [body1] 1fr [body2] 1fr [body3] 1fr [body4];
+  grid-template-areas: "banner banner" "navbar navbar" "heading heading" "sidebar body1" "sidebar body2" "sidebar body3";
+  gap: 10px 10px;
+}
+
+.banner {
+  grid-area: banner;
+  background-image: url("BannerSample.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navigation {
+  grid-area: navbar;
+  background-color: blanchedalmond;
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  color: black;
 }
 
 .heading1 {
-  color: floralwhite;
+  grid-area: heading;
+  background-color: darkslategray;
+  color: darkgoldenrod;
+  text-align: left;
+  text-indent: 10%;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pagebody {
+  grid-area: body1;
+  color: darkslategray;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.boxedtext {
+  background-color: blanchedalmond;
+  color: black;
+  border: 3px solid black;
+  padding: 25px;
+  text-align: left;
+  text-indent: 10%;
 }
 
 /*# sourceMappingURL=styles.css.map */
