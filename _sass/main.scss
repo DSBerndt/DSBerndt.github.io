@@ -1,5 +1,5 @@
 .current {
-    color: green;
+    color: darkgoldenrod;
 }
 .sitebackground {
     background-color: floralwhite;
@@ -16,7 +16,7 @@
         "sidebar body2"
         "sidebar body3"
         ;
-    gap: 10px 10px;
+    gap: 10px 0px;
 }
 .banner {
     grid-area: banner;
@@ -24,12 +24,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.navigation {
+.navigationbar {
     grid-area: navbar;
     background-color: blanchedalmond; 
     border: 2px solid black; 
     padding: 10px;
-    text-align: center;
+    text-align: left;
     color: black;
 
 }
@@ -57,4 +57,8 @@
     padding: 25px;
     text-align: left;
     text-indent: 10%;
+}
+.navigationtext {
+    margin: 10px;
+    padding: 2px;
 }

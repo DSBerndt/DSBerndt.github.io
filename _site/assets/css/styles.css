@@ -1,5 +1,5 @@
 .current {
-  color: green;
+  color: darkgoldenrod;
 }
 
 .sitebackground {
@@ -10,7 +10,7 @@
   grid-template-columns: [sidebar] 20% [body] 80% [bodyend];
   grid-template-rows: [banner] 60px [navbar] 50px [heading] 50px [body1] 1fr [body2] 1fr [body3] 1fr [body4];
   grid-template-areas: "banner banner" "navbar navbar" "heading heading" "sidebar body1" "sidebar body2" "sidebar body3";
-  gap: 10px 10px;
+  gap: 10px 0px;
 }
 
 .banner {
@@ -20,12 +20,12 @@
   background-size: cover;
 }
 
-.navigation {
+.navigationbar {
   grid-area: navbar;
   background-color: blanchedalmond;
   border: 2px solid black;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   color: black;
 }
 
@@ -55,6 +55,11 @@
   padding: 25px;
   text-align: left;
   text-indent: 10%;
+}
+
+.navigationtext {
+  margin: 10px;
+  padding: 2px;
 }
 
 /*# sourceMappingURL=styles.css.map */
