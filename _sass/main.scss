@@ -1,46 +1,58 @@
-.current {
-    color: darkgoldenrod;
-}
-.sitebackground {
-    background-color: floralwhite;
-    display: grid;
-    width: 98%;
-    height: 250px;
-    grid-template-columns: [sidebar] 20% [body] 80% [bodyend];
-    grid-template-rows: [banner] 60px [navbar] 50px [heading] 50px [body1] 1fr [body2] 1fr [body3] 1fr [body4];
-    grid-template-areas:
-        "banner banner"
-        "navbar navbar"
-        "heading heading"
-        "sidebar body1"
-        "sidebar body2"
-        "sidebar body3"
-        ;
-    gap: 10px 0px;
-}
 .banner {
-    grid-area: banner;
+    display: grid;
+    width: 100%;
+    height: 60px;
     background-image: url('BannerSample.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
+.sitehead {
+    background-image: url('Sample_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    max-width: 100%;
+    height: 320px;
+    grid-template-columns: [sidebar] 10% [body] 90% [bodyend];
+    grid-template-rows: [navbar] 30px [heading] 80px [body1];
+    grid-template-areas:
+        "navbar navbar"
+        "heading heading"
+        ;
+    margin: 0px;
+}
+.sitebackground {
+    background-color: white;
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-columns: [sidebar] 20% [body] 80% [bodyend];
+    grid-template-rows: [body1] 1fr [body2] 1fr [body3] 1fr [body4];
+    grid-template-areas:
+        "sidebar body1"
+        "sidebar body2"
+        "sidebar body3"
+        ;
+    margin: 0px;
+}
 .navigationbar {
     grid-area: navbar;
-    background-color: blanchedalmond; 
+    background-color: rgba(255,255,255,0.8); 
     border: 2px solid black; 
     padding: 10px;
     text-align: left;
     color: black;
-
 }
 .heading1 {
     grid-area: heading;
-    background-color: darkslategray;
-    color: darkgoldenrod;
+    background-color: rgba(255,255,255,0.8);
+    color: #C41230;
     text-align: left;
     text-indent: 10%;
-    font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    font-size: 60px;
+    font-family: sans-serif;
 }
 .pagebody {
     grid-area: body1;
@@ -48,17 +60,56 @@
 }
 .sidebar {
     grid-area: sidebar;
+    padding: 5px;
+    text-align: center;
 }
 
 .boxedtext {
-    background-color: blanchedalmond; 
+    background-color: #E0E0E0; 
     color: black;
     border: 3px solid black;
+    border-radius: 5px;
     padding: 25px;
     text-align: left;
     text-indent: 10%;
 }
 .navigationtext {
+    color: #C41230;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
     margin: 10px;
     padding: 2px;
+}
+.sidebartext {
+    color: #C41230;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    padding: 2px;
+}
+a:hover {
+    color: rgb(149,17,32);
+}
+
+.colorpallatte{
+    color: rgb(196,18,48);
+    color: rgb(109,110,113);
+    color: rgb(224,224,224);
+    color: rgba(255,255,255,0.5);
+    color: floralwhite;
+    color: rgb(239,58,71);
+    color: rgb(253,181,21);
+    color: rgb(0,150,71);
+    color: rgb(0,143,145);
+    color: rgb(4,54,115);
+    color: rgb(188,180,158);
+    color: rgb(228,218,196);
+    color: rgb(31,76,76);
+    color: rgb(113,159,148);
+    color: rgb(25,44,75);
+    color: rgb(149,17,32);
 }

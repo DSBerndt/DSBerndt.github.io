@@ -5,9 +5,15 @@
         <title>{{ page.title }}</title>
         <link rel="stylesheet" href="/assets/css/styles.css">
     </head>
-    <body class="sitebackground">
+    <body>
         <div class="banner"></div>
-        {% include navigation.html %}
-        {{ content }}
+        <div class="sitehead">
+            {% include navigation.html %}
+            <div class="heading1">{{ page.heading }}</div>
+        </div>
+        <div class="sitebackground">
+            {% include sidebar.html %}
+            {{ content }}
+        </div>
     </body>
 </html>

@@ -1,0 +1,8 @@
+<div class="sidebar">
+    {% for item in page.sidebar %}
+        <a href="https://dsberndt.github.io/{% if {{page.title}}!=Home %}{{ page.title }}{% endif %}#{{ item }}" class="sidebartext">
+            {{ item }}
+            <br>
+        </a>
+    {% endfor %}
+</div>
