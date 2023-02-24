@@ -1,14 +1,17 @@
+/*
+Page Formatting Below
+*/
 .banner {
   display: grid;
   width: 100%;
-  height: 60px;
-  background-image: url("BannerSample.png");
+  height: 80px;
+  background-image: url("images/Icon_Resized.png"), url("images/Banner.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain, cover;
 }
 
 .sitehead {
-  background-image: url("Sample_img.png");
+  background-image: url("images/Home_Background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,14 +66,46 @@
   text-align: center;
 }
 
+/*
+Text formating below
+*/
 .boxedtext {
   background-color: #E0E0E0;
   color: black;
   border: 3px solid black;
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 25px;
   text-align: left;
   text-indent: 10%;
+}
+
+.unboxedtext {
+  padding: 10px;
+  text-align: left;
+}
+
+.heading2 {
+  color: #C41230;
+  text-align: left;
+  text-indent: 0%;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.heading3 {
+  color: rgb(109, 110, 113);
+  text-align: left;
+  text-indent: 1%;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.listsnippet {
+  color: black;
+  text-align: left;
+  text-indent: 2%;
+  font-size: 15px;
+  font-family: sans-serif;
 }
 
 .navigationtext {
@@ -97,23 +132,27 @@ a:hover {
   color: rgb(149, 17, 32);
 }
 
-.colorpallatte {
-  color: rgb(196, 18, 48);
-  color: rgb(109, 110, 113);
-  color: rgb(224, 224, 224);
-  color: rgba(255, 255, 255, 0.5);
-  color: floralwhite;
-  color: rgb(239, 58, 71);
-  color: rgb(253, 181, 21);
-  color: rgb(0, 150, 71);
-  color: rgb(0, 143, 145);
-  color: rgb(4, 54, 115);
-  color: rgb(188, 180, 158);
-  color: rgb(228, 218, 196);
-  color: rgb(31, 76, 76);
-  color: rgb(113, 159, 148);
-  color: rgb(25, 44, 75);
-  color: rgb(149, 17, 32);
+/*
+These are all the CMU colors
+/
+.colorpallatte{
+    color: rgb(196,18,48);
+    color: rgb(109,110,113);
+    color: rgb(224,224,224);
+    color: rgba(255,255,255,0.5);
+    color: floralwhite;
+    color: rgb(239,58,71);
+    color: rgb(253,181,21);
+    color: rgb(0,150,71);
+    color: rgb(0,143,145);
+    color: rgb(4,54,115);
+    color: rgb(188,180,158);
+    color: rgb(228,218,196);
+    color: rgb(31,76,76);
+    color: rgb(113,159,148);
+    color: rgb(25,44,75);
+    color: rgb(149,17,32);
 }
+*/
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,15 +1,15 @@
 ---
 layout: default
 title: About Us
+heading: About Us
+sidebar:
 ---
-<h1>Staff</h1>
-
-<ul>
-    {% for author in site.authors %}
-        <li>
-            <h3> {{ author.name }} </h3>
-            <h4> {{ author.position }} </h4>
-            <p> {{ author.content | markdownify }} </p>
-        </li>
-    {% endfor %}
-</ul>
+<div class="pagebody">
+    <div class="unboxedtext">
+        {% for author in site.authors %}
+            <h3><a href="{{author.url}}" class="heading2"> {{ author.name }} </a></h3>
+            <h4 class="heading3"> {{ author.position }} </h4>
+            <p class="listsnippet"> {{ author.snippet | markdownify }} </p>
+        {% endfor %}
+    </div>
+</body>

@@ -1,8 +1,9 @@
-<div class="sidebar">
+<div class="sidebar"><style>.sidebarlines {border-color: #C41230;}</style>
+    <hr>
     {% for item in page.sidebar %}
         <a href="https://dsberndt.github.io/{% if {{page.title}}!=Home %}{{ page.title }}{% endif %}#{{ item }}" class="sidebartext">
             {{ item }}
-            <br>
         </a>
+        <hr>
     {% endfor %}
 </div>
