@@ -1,7 +1,7 @@
 ---
 layout: post
-author: You from the Future
-title: Watch Out!
+author: Bob
+title: Test Post
 ---
 
-They are coming for you! They are ri-
+Testing post function.

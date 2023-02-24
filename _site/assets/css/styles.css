@@ -76,7 +76,7 @@ Text formating below
   border-radius: 25px;
   padding: 25px;
   text-align: left;
-  text-indent: 10%;
+  text-indent: 0%;
 }
 
 .unboxedtext {
@@ -126,6 +126,10 @@ Text formating below
   font-weight: bold;
   margin: 10px;
   padding: 2px;
+}
+
+hr.sidebarlines {
+  border-color: #C41230;
 }
 
 a:hover {
