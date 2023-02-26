@@ -9,7 +9,7 @@ sidebar:
         {% for author in site.authors %}
             <h3><a href="{{author.url}}" class="heading2"> {{ author.name }} </a></h3>
             <h4 class="heading3"> {{ author.position }} </h4>
-            <p class="listsnippet"> {{ author.snippet | markdownify }} </p>
+            <p class="listsnippet"> {{ author.snippet }} </p>
         {% endfor %}
     </div>
 </body>

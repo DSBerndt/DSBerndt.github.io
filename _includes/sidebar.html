@@ -1,9 +1,11 @@
 <div class="sidebar">
-    <hr class="sidebarlines">
-    {% for item in page.sidebar %}
-        <a href="https://dsberndt.github.io/{% if {{page.title}}!=Home %}{{ page.title }}{% endif %}#{{ item }}" class="sidebartext">
-            {{ item }}
-        </a>
+    <div class="stickysidebar">
         <hr class="sidebarlines">
-    {% endfor %}
+        {% for item in page.sidebar %}
+            <a href="https://dsberndt.github.io/{% unless {{page.title}}==Home %}{{ currentprojects.html }}{% endunless %}#{{ item }}" class="sidebartext">
+                {{ item }}
+            </a>
+            <hr class="sidebarlines">
+        {% endfor %}
+    </div>
 </div>
