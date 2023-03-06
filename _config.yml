@@ -19,3 +19,6 @@ defaults:
       path: ""
     values:
       layout: "default"
+      title: "Home"
+      heading: "DFTBML"
+      sidebar: [What is DFTBML?, What Makes DFTBML Different?, Learn More!]
