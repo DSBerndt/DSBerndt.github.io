@@ -3,13 +3,11 @@ title: Tutorials
 heading: Tutorials
 sidebar: []
 ---
-<h1> Latest Posts </h1>
-
-<ul>
-    {% for post in site.posts %}
-        <li>
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            {{ post.excerpt }}
-        </li>
+<div class="pagebody">
+<div class="unboxedtext">
+    {% for tutorial in site.tutorials %}
+        <h3><a href="{{ tutorial.url }}" class="heading2">{{ tutorial.title }}</a></h3>
+        <p class="classictext"> {{ content }} </p>
     {% endfor %}
-</ul>
+</div>
+</div>

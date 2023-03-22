@@ -3,6 +3,12 @@ collections:
     output: true
   projects:
     output: true
+  tutorials:
+    output: true
+  parametersets:
+    output: true
+  files:
+    output: true  
 
 defaults:
   - scope:

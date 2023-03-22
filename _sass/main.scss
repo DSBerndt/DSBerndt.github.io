@@ -1,6 +1,9 @@
 /*
 Page Formatting Below
 */
+.nomargins{
+    margin: 0px;
+}
 .banner {
     position: -webkit-sticky;
     position: sticky;
@@ -17,6 +20,7 @@ Page Formatting Below
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
+    margin: 0px;
     max-width: 100%;
     height: 320px;
     grid-template-columns: [sidebar] 10% [body] 90% [bodyend];
@@ -25,11 +29,11 @@ Page Formatting Below
         "navbar navbar"
         "heading heading"
         ;
-    margin: 0px;
 }
 .sitebackground {
     background-color: white;
     display: grid;
+    margin: 0px;
     width: 100%;
     height: 250px;
     grid-template-columns: [sidebar] 20% [body] 80% [bodyend];
@@ -39,7 +43,6 @@ Page Formatting Below
         "sidebar body2"
         "sidebar body3"
         ;
-    margin: 0px;
 }
 .navigationbar {
     grid-area: navbar;
