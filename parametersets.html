@@ -4,3 +4,27 @@ title: Parameter Sets
 heading: Parameter Sets
 sidebar: []
 ---
+<div class="pagebody">
+    <table>
+        <tr>
+            <th width="15%" color="#C41230"> {{ "File Name" }} </th>
+            <th width="1f" color="#C41230"> {{ "Description" }} </th>
+            <th width="20%" color="#C41230"> {{ "Trained Elements" }} </th>
+            <th width="15%" color="#C41230"> {{ "Github Version String" }} </th>
+            <th width="20%" color="#C41230"> {{ "Download" }} </th>
+            </tr>
+        {% for ps in site.parametersets %}
+            <tr>
+            <td><a href="{{ps.url}}" class="boldtext"> {{ ps.heading }} </a></td>
+            <td class="classictext"> {{ ps.description }} </td>
+            <td class="classictext"> {{ ps.elements }} </td>
+            <td class="classictext"> {{ ps.ghstring }} </td>
+            <td>
+                <a href="/files/{{ ps.name }}.zip" download>
+                <button type="button" class="ps_download_button"> {{ "File Download" }} </button>
+                </a>
+            </td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>

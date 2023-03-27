@@ -1,30 +1,32 @@
 /*
 Page Formatting Below
 */
-.nomargins{
+.nomargins{ //removes margins that were placed on the entire website as a default.
     margin: 0px;
 }
 .banner {
     position: -webkit-sticky;
-    position: sticky;
+    position: sticky; //these two lines make the banner scroll with the page.
     top: 0;
     width: 100%;
     height: 80px;
-    background-image: url('images/Icon_Resized.png'), url('images/Banner.png');
+    background-image: url('images/Icon_Resized.png'), url('images/Banner.png'); //these are the images for the banner and the icon that is placed on top of it
     background-repeat: no-repeat;
     background-size: contain, cover;
 }
 .sitehead {
-    background-image: url('images/Home_Background.png');
+    background-image: url('images/Home_Background.png'); //selects the heading background image on a page with the default layout
+                                                        // This needs to be rewritten to allow for differing backgrounds
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
+    display: grid; //The code below is in the grid format to break down the website into workable blocks.
     margin: 0px;
     max-width: 100%;
     height: 320px;
-    grid-template-columns: [sidebar] 10% [body] 90% [bodyend];
-    grid-template-rows: [navbar] 30px [heading] 80px [body1];
+    grid-template-columns: [sidebar] 10% [body] 90% [bodyend]; // This breakup into two columns for the header isn't really necessary but might be useful in the future.
+    grid-template-rows: [navbar] 30px [heading] 80px [body1]; // This breakup is necessary to define the Navbar as 30px and the heading as 80px
+                                                            // note that 30+80!=320 (the height from above) the rest of the height goes into the background picture. That can be changed at will
     grid-template-areas:
         "navbar navbar"
         "heading heading"
@@ -48,19 +50,21 @@ Page Formatting Below
     grid-area: navbar;
     background-color: rgba(255,255,255,0.8); 
     border: 2px solid black; 
-    padding: 10px;
+    padding: 0px;
     text-align: left;
-    color: black;
+    line-height: 30px; //MUST change this if the heght of the Navbar is modified in order to keep the text centered.
 }
-.heading1 {
+.heading1 { //
     grid-area: heading;
     background-color: rgba(255,255,255,0.8);
     color: #C41230;
     text-align: left;
     text-indent: 10%;
     padding: 10px;
-    font-size: 60px;
-    font-family: sans-serif;
+    font-size: calc(15px + (70 - 15) * (100vw - 100px) / (2000 - 100)); // resized font with window rescale to avoid heading going onto a second line.
+                                                                        // font-size: calc(min font size + (max font size - min font size) * (100vw - min window size) / (max window size - min window size));
+    font-family: Garamond;
+    font-weight: bolder;
 }
 .pagebody {
     grid-area: body1;
@@ -68,10 +72,10 @@ Page Formatting Below
 }
 .sidebar {
     grid-area: sidebar;
-    padding: 5px;
+    padding: 0px;
     text-align: center;
 }
-.stickysidebar {
+.stickysidebar { //This allows the sidebar to come with you when scrolling.
     position: -webkit-sticky;
     position: sticky;
     top: 78.5px;
@@ -100,7 +104,7 @@ Text formating below
     text-align: left;
     text-indent: 0%;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: Garamond;
 }
 .heading3 {
     color: rgb(109,110,113);
@@ -111,6 +115,22 @@ Text formating below
 }
 .classictext {
     color: black;
+    text-align: left;
+    text-indent: 2%;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: Garamond;
+}
+.boldtext { //used in the parameter sets tables,
+    color: #C41230;
+    text-align: left;
+    text-indent: 2%;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Garamond;
+}
+.linktext {
+    color: #C41230;
     text-align: left;
     text-indent: 2%;
     font-weight: 90;
@@ -124,14 +144,14 @@ Text formating below
     text-align: left;
     text-indent: 2%;
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: Garamond;
 }
 
 
-.navigationtext {
+.navigationtext { //
     color: #C41230;
     text-decoration: none;
-    font-size: 15px;
+    font-size: calc(7px + (20 - 7) * (100vw - 100px) / (2000 - 100));
     font-family: sans-serif;
     font-weight: bold;
     margin: 10px;
@@ -142,7 +162,7 @@ Text formating below
     color: #C41230;
     text-decoration: none;
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: Garamond;
     font-weight: bold;
     margin: 10px;
     padding: 2px;
@@ -153,6 +173,39 @@ hr.sidebarlines {
 // Link formats
 a:hover {
     color: rgb(149,17,32);
+}
+a:visited {
+    color: #C41230;
+}
+// Table formats
+table, th, td {
+    border: 1px solid;
+    padding: 5px;
+}
+table {
+    margin: 5px auto;
+    width: 98%;
+    border-collapse: collapse;
+}
+
+// Button Formats
+button.ps_download_button {
+    display: inline-block;
+    background-color: #C41230;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    border: 3px solid #C41230;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: Garamond;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+button.ps_download_button:hover {
+    background-color: white;
+    color: #C41230;
 }
 
 // Image formatting
