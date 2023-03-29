@@ -2,9 +2,15 @@
     <div class="stickysidebar">
         <hr class="sidebarlines">
         {% for item in page.sidebar %}
-            <a href="https://dsberndt.github.io/{% unless {{page.title}}==Home %}{{ currentprojects.html }}{% endunless %}#{{ item }}" class="sidebartext">
+            {% if {{page.title}}=="Home" %} 
+            <a href="/#{{ item }}" class="sidebartext"> 
+                {{ item }} 
+            </a> 
+            {% else %}
+            <a href="#{{ item }}" class="sidebartext">
                 {{ item }}
             </a>
+            {% endif %}
             <hr class="sidebarlines">
         {% endfor %}
     </div>

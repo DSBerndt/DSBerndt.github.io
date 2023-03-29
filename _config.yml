@@ -21,7 +21,14 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "default"
 
+## This is a hardcode fix around an error I couldn't solve where the metadeta for the index page wasn't being read. 
+## As a result, any page without a layout, title, heading or sidebar list (it can be empty) will defaul to these values.
   - scope:
       path: ""
     values:

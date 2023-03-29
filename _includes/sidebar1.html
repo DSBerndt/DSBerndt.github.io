@@ -1,0 +1,11 @@
+<div class="sidebar">
+    <div class="stickysidebar">
+        <hr class="sidebarlines">
+        {% for item in page.sidebar %}
+            <a href="https://dsberndt.github.io/{% unless {{page.title}}==Home %}{{ currentprojects.html }}{% endunless %}#{{ item }}" class="sidebartext">
+                {{ item }}
+            </a>
+            <hr class="sidebarlines">
+        {% endfor %}
+    </div>
+</div>
