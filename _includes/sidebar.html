@@ -2,7 +2,7 @@
     <div class="stickysidebar">
         <hr class="sidebarlines">
         {% for item in page.sidebar %}
-            {% if {{page.title}}=="Home" %} 
+            {% if {{page.title}}=="Home" %}               <!--This if statement might not be necessary at all :P-->
             <a href="/#{{ item }}" class="sidebartext"> 
                 {{ item }} 
             </a> 

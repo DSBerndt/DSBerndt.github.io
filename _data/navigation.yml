@@ -1,12 +1,10 @@
 - name: Home
   link: /
 - name: Tutorials
-  link: /tutorials.html
-- name: Files
-  link: /files.html
+  link: /tutorials
 - name: Parameter Sets
-  link: /parametersets.html
+  link: /parameter_sets
 - name: Current Projects
-  link: /currentprojects.html
+  link: /current_projects
 - name: About Us
-  link: /aboutus.html
+  link: /about_us
