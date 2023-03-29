@@ -31,11 +31,15 @@ defaults:
       type: "parametersets"
     values:
       layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 ## This is a hardcode fix around an error I couldn't solve where the metadeta for the index page wasn't being read. 
 ## As a result, any page without a layout, title, heading or sidebar list (it can be empty) will defaul to these values.
   - scope:
-      path: ""
+      path: "/"
     values:
       layout: "default"
       title: "Home"
