@@ -26,6 +26,11 @@ defaults:
       type: "projects"
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "parametersets"
+    values:
+      layout: "default"
 
 ## This is a hardcode fix around an error I couldn't solve where the metadeta for the index page wasn't being read. 
 ## As a result, any page without a layout, title, heading or sidebar list (it can be empty) will defaul to these values.
@@ -36,9 +41,3 @@ defaults:
       title: "Home"
       heading: "DFTBML"
       sidebar: ["What is DFTBML?", "What Makes DFTBML Different?", "Learn More!"]
-
-  - scope:
-      path: ""
-      type: "parametersets"
-    values:
-      name: ""
