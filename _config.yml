@@ -32,7 +32,7 @@ defaults:
 ## As a result, any page without a layout, title, heading or sidebar list (it can be empty) will default to these values.
 ## Couldn't figure out how to fix it unfortunately except to change the permalink of the Index page.
   - scope:
-      path: ""
+      path: "/Home"
       include: ["index.html"]
       exclude: ["_projects"]
     values:
