@@ -94,6 +94,7 @@ Text formating below
 
 .unboxedtext {
   padding: 10px;
+  padding-right: 20px;
   text-align: left;
 }
 
@@ -117,9 +118,9 @@ Text formating below
   color: black;
   text-align: left;
   text-indent: 2%;
-  font-weight: 100;
-  font-size: 15px;
-  font-family: Garamond;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .boldtext {
@@ -128,16 +129,7 @@ Text formating below
   text-indent: 2%;
   font-weight: bold;
   font-size: 15px;
-  font-family: Garamond;
-}
-
-.linktext {
-  color: #C41230;
-  text-align: left;
-  text-indent: 2%;
-  font-weight: 90;
-  font-size: 15px;
-  font-family: serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .listsnippet {
@@ -145,7 +137,7 @@ Text formating below
   text-align: left;
   text-indent: 2%;
   font-size: 15px;
-  font-family: Garamond;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .navigationtext {
@@ -171,6 +163,15 @@ Text formating below
 
 hr.sidebarlines {
   border-color: #C41230;
+}
+
+.linktext {
+  color: #C41230;
+  text-align: left;
+  text-indent: 2%;
+  font-weight: 90;
+  font-size: 15px;
+  font-family: serif;
 }
 
 a:hover {
@@ -210,6 +211,13 @@ button.ps_download_button {
 button.ps_download_button:hover {
   background-color: white;
   color: #C41230;
+}
+
+blockquote {
+  background-color: #E0E0E0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
 }
 
 .circularimage {
