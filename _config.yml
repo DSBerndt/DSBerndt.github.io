@@ -37,4 +37,4 @@ defaults:
       layout: "default"
       title: "Home"
       heading: "DFTBML"
-      sidebar: ["What is DFTBML?", "What Makes DFTBML Different?", "Learn More!"]
+      sidebar: [What is DFTBML?, What Makes DFTBML Different?, How to Use DFTBML, Learn More!]
