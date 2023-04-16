@@ -64,6 +64,7 @@ Page Formatting Below
 
 .pagebody {
   grid-area: body1;
+  margin-top: 10px;
   margin-right: 10px;
   margin-left: 40px;
   color: darkslategray;
