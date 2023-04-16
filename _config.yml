@@ -1,5 +1,5 @@
 collections:
-  authors:
+  contributors:
     output: true
     permalink: /:collection/:name
   projects:

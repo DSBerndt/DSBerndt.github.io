@@ -69,6 +69,7 @@ Page Formatting Below
 .pagebody {
     grid-area: body1;
     margin-right: 10px;
+    margin-left: 40px;
     color: darkslategray;
 }
 .sidebar {
@@ -104,7 +105,9 @@ Text formating below
 .heading2 {
     color: #C41230;
     text-align: left;
-    text-indent: 0%;
+    text-indent: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 20px;
     font-family: Garamond;
 }
