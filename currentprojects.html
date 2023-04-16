@@ -8,7 +8,6 @@ sidebar: [Prediction of Excited States, Prediction of Polarizabilities, Repulsiv
     <div class="unboxedtext">
         {% for project in site.projects %}
             <h3><a href="{{project.url}}" class="heading2" id="{{project.name}}"> {{ project.name }} </a></h3>
-            <!-- <h4 class="heading3"> {{ author.position }} </h4> -->
             <p class="listsnippet"> {{ project.snippet | markdownify }} </p>
         {% endfor %}
     </div>

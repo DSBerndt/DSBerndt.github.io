@@ -5,6 +5,24 @@ heading: Tutorials
 sidebar: []
 ---
 <div class="pagebody">
+<div class="boxedtext">
+    <p class="classictext">
+        {{"This page is meant to provide step by step instructions or explanations about how DFTBML works. 
+        There are currently these tutorials: <i>The Setup & Installation Guide</i>, <i>The Model Training Guide</i>, 
+        <i>How to Use a Pretrained Model</i>, and <i>The Architecture of DFTBML</i>.
+        <br><br>
+        <i>The Setup & Installation Guide</i> contains basic instructions for first time users to get DFTBML functioning on their device.
+        <br><br>
+        <i>The Model Training Guide</i> is a set of instructions for users of DFTBML who wish to use the tool to train their own model from specific datasets. The guide is broken down into instructions for: preparing the raw data from your dataset, running a precomputation, training the model, and checking the accuracy of your model with DFTB+.
+        <br><br>
+        <i>How to Use a Pretrained Model</i> is for users who would like to use one of the parameter sets provided on the "}}
+        <a href="/parameter_sets" class="linktext">{{"Parameter Sets"}}</a> 
+        {{" page as opposed to training their own model. This guide will quickly cover how to choose the parameter set that is right for your project and how to use the SKF files to predict characteristics of your inputs.
+        <br><br>
+        <i>The Architecture of DFTBML</i> is a tutorial to help users understand how DFTBML works.
+        "}}
+    </p>
+</div>
 <div class="unboxedtext">
     {% for tutorial in site.tutorials %}
         <h3><a href="{{ tutorial.url }}" class="heading2">{{ tutorial.title }}</a></h3>

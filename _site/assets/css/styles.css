@@ -89,7 +89,10 @@ Text formating below
   color: black;
   border: 3px solid black;
   border-radius: 25px;
-  padding: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
   text-align: left;
   text-indent: 0%;
 }
