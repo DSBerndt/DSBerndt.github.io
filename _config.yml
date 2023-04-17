@@ -31,10 +31,11 @@ defaults:
 ## This is a hardcode fix around an error I couldn't solve where the metadeta for the index page wasn't being read. 
 ## As a result, any page without a layout, title, heading or sidebar list (it can be empty) will default to these values.
 ## Couldn't figure out how to fix it unfortunately except to change the permalink of the Index page.
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-      title: "Home"
-      heading: "DFTBML"
-      sidebar: ["What is DFTBML?", "What Makes DFTBML Different?", "How to Use DFTBML", "Learn More!"]
+
+#  - scope:
+#      path: ""
+#    values:
+#      layout: "default"
+#      title: "Home"
+#      heading: "DFTBML"
+#      sidebar: ["What is DFTBML?", "What Makes DFTBML Different?", "How to Use DFTBML", "Learn More!"]
